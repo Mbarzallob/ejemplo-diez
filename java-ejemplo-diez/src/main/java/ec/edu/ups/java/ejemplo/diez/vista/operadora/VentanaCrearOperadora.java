@@ -166,7 +166,7 @@ public class VentanaCrearOperadora extends javax.swing.JInternalFrame {
         operadora.setCodigo(codigo);
         operadora.setNombre(nombre);
         operadoraControlador.agregar(operadora);
-        JOptionPane.showMessageDialog(this, "La persona ha sido creada exitosamente! :)");
+        JOptionPane.showMessageDialog(this, "La operadora ha sido creada exitosamente! :)");
         this.limpiarCampos();
 
     }//GEN-LAST:event_btnAceptarActionPerformed

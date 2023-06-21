@@ -30,7 +30,10 @@ public class OperadoraControlador {
         this.operadora = operadoraDAO.read(codigo);
         return this.operadora;
     }
-    
+    public Operadora buscarPorNombre(String nombre){
+        this.operadora=operadoraDAO.readByNombre(nombre);
+        return this.operadora;
+    }
     public boolean actualizar(Operadora operadora){
         Operadora operadoraEncontrada = this.buscar(operadora.getCodigo());
         if(operadoraEncontrada!=null){

@@ -17,4 +17,5 @@ public interface IOperadoraDAO {
     public void update(Operadora operadora);
     public void delete(int codigo);
     public List<Operadora> list();
+    public Operadora readByNombre(String nombre);
 }

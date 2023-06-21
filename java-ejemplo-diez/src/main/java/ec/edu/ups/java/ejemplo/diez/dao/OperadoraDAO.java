@@ -62,4 +62,14 @@ public class OperadoraDAO implements IOperadoraDAO {
         return listaOperadoras;
     }
 
+    @Override
+    public Operadora readByNombre(String nombre) {
+        for(Operadora operadora: listaOperadoras){
+            if(operadora.getNombre().equals(nombre)){
+                return operadora;
+            }
+        }
+        return null;
+    }
+
 }
